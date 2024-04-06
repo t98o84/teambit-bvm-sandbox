@@ -53,13 +53,19 @@
      * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
      */
     "packageManager": "teambit.dependencies/pnpm",
-    "rootComponents": true,
     "policy": {
-      "dependencies": {},
+      "dependencies": {
+        "@bitdev/react.app-types.vite-react": "^1.1.26",
+        "@vitejs/plugin-react": "^4.2.1",
+        "vite": "^5.2.8"
+      },
       "peerDependencies": {}
-    }
+    },
+    "linkCoreAspects": true,
+    "rootComponents": true
   },
   "teambit.workspace/workspace-config-files": {
     "enableWorkspaceConfigWrite": true
-  }
+  },
+  "my-org.my-project/my-app": {}
 }

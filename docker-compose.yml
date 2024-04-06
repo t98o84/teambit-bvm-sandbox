@@ -5,8 +5,12 @@ services:
     build:
       context: .
       dockerfile: docker/node/Dockerfile
+    env_file:
+      - .env
     tty: true
     stdin_open: true
     working_dir: /app
     volumes:
       - .:/app
+    ports:
+      - "${NODE_FORWARD_PORT}:${NODE_PORT}"

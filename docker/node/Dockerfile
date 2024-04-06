@@ -1,6 +1,6 @@
 FROM node:20-alpine
 
-ENV PATH="/home/node/bin:${PATH}"
+ENV PATH "/home/node/bin:${PATH}"
 
 RUN apk add --update-cache \
     git \

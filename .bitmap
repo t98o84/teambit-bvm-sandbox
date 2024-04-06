@@ -9,5 +9,19 @@
  */
 
 {
+    "my-app": {
+        "name": "my-app",
+        "scope": "",
+        "version": "",
+        "defaultScope": "my-org.my-project",
+        "mainFile": "index.ts",
+        "rootDir": "my-project/my-app",
+        "config": {
+            "bitdev.react/react-env@1.1.49": {},
+            "teambit.envs/envs": {
+                "env": "bitdev.react/react-env"
+            }
+        }
+    },
     "$schema-version": "17.0.0"
 }
